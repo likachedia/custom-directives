@@ -1,0 +1,12 @@
+.container {
+    display: grid;
+    width: 20rem;
+    grid-template-columns: repeat(9, 1fr);
+    grid-row: auto;
+    gap: 0.5rem;
+}
+.cube {
+    width: 2rem;
+    height: 2rem;
+    background-color: red;
+}

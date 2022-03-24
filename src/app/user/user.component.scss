@@ -1,0 +1,25 @@
+.container {
+    display: flex;
+    gap: 1rem;
+}
+
+.card {
+    width: 300px;
+    // height: 200px;
+    border: 1px solid rgb(11, 179, 53);
+    border-radius: 0.5rem;
+    padding-inline: 1rem;
+    padding-bottom: 1rem;
+    color: #ffffff;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    &__bage {
+        width: 3rem;
+        padding: 5px 10px;
+        border-radius: 0.5rem;
+        box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75) inset;
+    }
+}

@@ -1,0 +1,13 @@
+<p>Task 1!</p>
+<h3>Users: {{users | mapNames}}</h3>
+<section class="container">
+    <ng-container *ngFor="let user of users">
+        <div class="card" [appBgByStatus]="user.status | stringToEnum" appChangeColor>
+            <h2>{{user.firstname + ' ' + user.lastname}}</h2>
+            <p>About {{user.about}}</p>
+            <p>{{user.date | formatDate}} years old</p>
+            <span class="card__bage" [appBgByStatus]="user.status | stringToEnum">{{user.status}}</span>
+        </div>
+    </ng-container>
+    
+</section>
